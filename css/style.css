@@ -108,6 +108,7 @@ li#dropdown:hover .dropdown-menu {
 
 #navbarDropdown {
    padding-top: 15%;
+   transition: all 0.3s;
 }
 
 a.dropdown-item {
@@ -168,9 +169,6 @@ a.nav-item:hover {
    bottom: 0;
 }
 
-#logo img:hover {
-   width: 36%;
-}
 
 #frase {
    color: white;
@@ -212,11 +210,15 @@ main {
 }
 
 #plataformas img {
-   width: 17%;
-   height: 3vh;
+   width: 15%;
 }
 
-
+footer {
+   padding: 2%;
+   font-weight: 400;
+   text-align: center;
+   color: #252850;
+}
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
@@ -234,6 +236,12 @@ main {
       font-size: 2.3rem
    }
 
+   .title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 10vh;
+   }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -274,77 +282,35 @@ main {
 
    /***** EFECTO HOVER MENU ***/
    .nav-item {
-      display: inline-block;
-      vertical-align: middle;
-      -webkit-transform: perspective(1px) translateZ(0);
-      transform: perspective(1px) translateZ(0);
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-      position: relative;
-      overflow: hidden;
+      transition: all 0.3s
    }
 
-   .nav-item:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      left: 0;
-      right: 100%;
-      bottom: 0;
-      background: #2098D1;
-      height: 4px;
-      -webkit-transition-property: right;
-      transition-property: right;
-      -webkit-transition-duration: 0.3s;
-      transition-duration: 0.3s;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
+   .nav-item:hover {
+      background-color: #25285096;
+      border-bottom-left-radius: 0.5rem;
+
    }
 
-   .nav-item:hover:before,
-   .nav-item:focus:before,
-   .nav-item:active:before {
-      right: 0;
+   #nav a:hover {
+      color: #51d1f6;
    }
 
-   #navbarDropdown .nav-item {
-      display: inline-block;
-      vertical-align: middle;
-      -webkit-transform: perspective(1px) translateZ(0);
-      transform: perspective(1px) translateZ(0);
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-      position: relative;
-      overflow: hidden;
+   .dropdown-menu.show {
+      left: 73%;
+      top: 85%;
+      background-color: #ffffff42;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+      width: 22%;
+      border-bottom-right-radius: 1rem;
    }
 
-   .nav-item:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      left: 0;
-      right: 100%;
-      bottom: 0;
-      background: #2098D1;
-      height: 4px;
-      -webkit-transition-property: right;
-      transition-property: right;
-      -webkit-transition-duration: 0.3s;
-      transition-duration: 0.3s;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
-   }
-
-   .nav-item:hover:before,
-   .nav-item:focus:before,
-   .nav-item:active:before {
-      right: 0;
+   #navbarDropdown:hover {
+      background-color: #25285096;
+      border-bottom-left-radius: 0.5rem;
    }
 
    /**********/
-   .dropdown-menu.show {
-      position: absolute;
-      left: 75%;
-      top: 65%;
-   }
+
 
    #logo img {
       width: 35%;
@@ -367,15 +333,25 @@ main {
    }
 
    .title {
-      display: flex;
-      align-items: center;
-      justify-content: center;
       height: 12vh;
+   }
+
+   .title h3 {
+      font-weight: 800;
+      font-size: 1.8rem;
+   }
+
+   .py-5 h1 {
+      font-weight: 200;
+      font-size: 3.5rem;
+   }
+
+   #mktServicio {
+      font-size: 1.3rem;
    }
 
    #plataformas img {
       width: 15%;
-      height: 7vh;
    }
 }
 
