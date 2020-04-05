@@ -197,6 +197,23 @@ a.nav-item:hover {
   color: #252850;
   font-weight: bold;
 }
+u {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+u::after {
+  content: "";
+  position: absolute;
+  bottom: -0.125rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  height: 0.75rem;
+  z-index: -1;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 main {
   color: white;
@@ -222,7 +239,7 @@ main {
 }
 
 #plataformas img {
-  width: 17%;
+  width: 19%;
   height: 5%;
 }
 
@@ -341,7 +358,7 @@ footer {
   }
 
   #socaleHeader h5 {
-    line-height: 1rem;
+    line-height: 1.4rem;
     font-size: 1.8rem;
   }
 
