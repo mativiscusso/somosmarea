@@ -67,7 +67,35 @@ header {
   border-color: transparent;
 }
 
-/******************/
+.navbar.navbar-expand-lg.navbar-dark.is-fixed {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  height: 9vh;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3), 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+  -webkit-animation: fadein 0.3s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.3s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 0.3s;
+  /* Internet Explorer */
+  -o-animation: fadein 0.3s;
+  /* Opera < 12.1 */
+  animation: fadein 0.3s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
 
 .dropdown-menu.show {
   background-color: white;
@@ -143,12 +171,14 @@ a.nav-item:hover {
 .nav-link .text-truncate .waves-effect .waves-light {
   color: #252850 !important;
 }
+
 #redes {
   margin-top: 10%;
   display: flex;
   flex-direction: column;
   align-items: start;
 }
+
 #redes i {
   color: #252850;
   padding: 10%;
@@ -209,11 +239,13 @@ a.nav-item:hover {
   color: #252850;
   font-weight: bold;
 }
+
 u {
   position: relative;
   text-decoration: none;
   color: inherit;
 }
+
 u::after {
   content: "";
   position: absolute;
@@ -232,13 +264,16 @@ main {
   text-align: center;
   background-color: #252850;
 }
+
 .py-5 h1 {
   font-weight: 200;
   font-size: 2.7rem;
 }
+
 .title h3 {
   font-weight: 800;
 }
+
 #callHome {
   font-size: 1rem;
   color: #252850;
@@ -358,12 +393,14 @@ footer {
   #logo img:hover {
     width: 36%;
   }
+
   #redes {
     margin: 0;
     right: 1%;
     position: absolute;
     top: 80px;
   }
+
   #redes i {
     padding: 15%;
   }
@@ -398,6 +435,7 @@ footer {
   #mktServicio {
     font-size: 1.3rem;
   }
+
   #callHome {
     font-size: 1.2rem;
   }
@@ -412,5 +450,4 @@ footer {
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-}
+@media (min-width: 1200px) {}
