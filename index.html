@@ -8,19 +8,24 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <!-- Bootstrap core CSS -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Material Design Bootstrap -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/css/mdb.min.css" rel="stylesheet">
    <link rel="shortcut icon" href="img/mobile/eme.jfif" type="image/x-icon">
-   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"></script>
-   <script src="https://use.fontawesome.com/e72a43c23f.js"></script>
+   <!-- JQuery -->
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <!-- Bootstrap tooltips -->
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+   </script>
+   <!-- Bootstrap core JavaScript -->
+   <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+   <!-- MDB core JavaScript -->
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js">
+   </script>
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <title>Agencia MAREA</title>
 
@@ -47,21 +52,23 @@
             </button>
             <div class="collapse navbar-collapse" id="nav">
                <ul id="menu" class="navbar-nav m-0 ml-lg-auto p-3 p-lg-0">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                     aria-haspopup="true" aria-expanded="false">
-                     SERVICIOS
-                  </a>
-                  <div id="menuDesplegable" class="dropdown-menu" aria-labelledby="navbarDropdown">
-                     <a class="nav-item" href="#">PUBLICIDAD DIGITAL</a>
-                     <a class="nav-item" href="#">DESARROLLO WEB</a>
-                     <a class="nav-item" href="#">COMMUNITY MANAGEMENT</a>
-                  </div>
+                  <li class="nav-item dropdown">
+                     <!-- Basic dropdown -->
+                     <a class="nav-link dropdown-toggle mr-4" href="" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"> SERVICIOS</a>
+
+                     <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Publicidad Digital</a>
+                        <a class="dropdown-item" href="#">Desarrollo Web</a>
+                        <a class="dropdown-item" href="#">Community Management</a>
+                     </div>
+                     <!-- Basic dropdown -->
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link text-truncate" href="#spy0">PLANES</a>
-                  <li class="nav-item dropdown">
+                     <a class="nav-link" href="#spy0">PLANES</a>
+                  </li>
                   <li class="nav-item">
-                     <a class="nav-link text-truncate" href="#spy2">CONTACTO</a>
+                     <a class="nav-link" href="#spy2">CONTACTO</a>
                   </li>
                </ul>
             </div>
@@ -84,7 +91,7 @@
       <div class="container-fluid py-5 px-3">
          <div class="py-5">
             <h1>SOLUCIONES DIGITALES</h1>
-            <h4>MARKETING DIGITAL Y DESARROLLO</h4>
+            <h5>MARKETING DIGITAL Y DESARROLLO WEB</h5>
          </div>
          <div id="mktSericios" class="row px-4">
             <div data-aos="zoom-out-right" class=" col-12 col-sm-12 col-md-6 col-lg-3">
@@ -123,7 +130,7 @@
                   <li>Remarketing</li>
                </ul>
             </div>
-            <div data-aos="zoom-out-left" class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <div data-aos="zoom-out-right" class="col-12 col-sm-12 col-md-6 col-lg-3">
                <div class="title">
                   <h3>Desarrollo & Soluciones en IT</h3>
                </div>
@@ -136,10 +143,11 @@
                </ul>
             </div>
          </div>
-         <button data-aos="flip-up" type="button" class="btn btn-info my-5 py-3 px-3">¿NOS CONTACTAMOS?</button>
+         <button id="callHome" data-aos="flip-up" class="btn aqua-gradient btn-lg my-5 py-3 px-3 rounded-pill">¿NOS
+            CONTACTAMOS?</button>
       </div>
    </main>
-   <div id="plataformas" class="container py-3 px-3">
+   <div id="plataformas" class="container-fluid py-3 px-3">
       <img class="img-fluid" src="img/desktop/ads.jpg" alt="">
       <img class="img-fluid" src="img/desktop/analitycs.jpg" alt="">
       <img class="img-fluid" src="img/desktop/mailc.jpg" alt="">
