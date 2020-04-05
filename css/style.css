@@ -218,6 +218,7 @@ footer {
    font-weight: 400;
    text-align: center;
    color: #252850;
+   font-size: .7rem;
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -317,6 +318,10 @@ footer {
       transition: all 0.2s;
    }
 
+   #logo img:hover {
+      width: 36%;
+   }
+
    #frase {
       width: 100%;
       top: 45%;
@@ -352,6 +357,10 @@ footer {
 
    #plataformas img {
       width: 15%;
+   }
+
+   footer {
+      font-size: 1rem;
    }
 }
 
