@@ -6,6 +6,10 @@
   text-decoration: none;
 }
 
+html {
+  margin: 0;
+}
+
 body {
   margin: 0;
 }
@@ -298,6 +302,22 @@ footer {
   font-size: 0.7rem;
 }
 
+/***************************************************************publicidadMobile***/
+#desktopPublicidad {
+  display: none;
+}
+#mobilePublicidad .card {
+  box-shadow: none;
+}
+#mobilePublicidad h3 {
+  color: #252850;
+  font-weight: 800;
+}
+#mobilePublicidad h2,
+h4 {
+  color: #252850;
+}
+
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
   .brand {
@@ -319,6 +339,9 @@ footer {
     align-items: center;
     justify-content: center;
     height: 10vh;
+  }
+  #mobilePublicidad {
+    height: 92vh;
   }
 }
 
@@ -447,7 +470,102 @@ footer {
   footer {
     font-size: 1rem;
   }
+
+  /**********************************************************************************publicidadDigital*********/
+  #desktopPublicidad {
+    display: block;
+    color: #252850;
+  }
+
+  #mobilePublicidad {
+    display: none;
+  }
+  #desktopPublicidad a {
+    color: white;
+    font-size: 1.1rem;
+  }
+
+  .main {
+    font-weight: 400;
+  }
+
+  article {
+    width: 80%;
+    padding: 5% 0 5% 0;
+  }
+
+  article img {
+    display: block !important;
+  }
+
+  #video {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    top: 230vh;
+  }
+  #video iframe {
+    height: 60vh;
+    width: 50vw;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0)
+    );
+  }
+  .campanias {
+    background-color: #252850;
+    height: 140vh;
+    color: white;
+    transform: skewY(2deg);
+    -moz-transform: skewY(2deg);
+    -o-transform: skewY(2deg);
+  }
+
+  .campanias .contenido {
+    transform: skewY(-2deg);
+    -moz-transform: skewY(-2deg);
+    -o-transform: skewY(-2deg);
+  }
+
+  #campanias {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #campanias div {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
+  .plataformasMkt {
+    margin-top: 30%;
+  }
+
+  .plataformasMkt ul {
+    padding-left: 3%;
+  }
+
+  hr {
+    width: 50%;
+    border: 5px solid #252850;
+    border-radius: 300px/10px;
+    height: 0px;
+    text-align: center;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
