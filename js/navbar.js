@@ -10,3 +10,12 @@ function stickyElement(e) {
 }
 
 window.addEventListener("scroll", stickyElement);
+
+let imagen = document.getElementsByClassName("imgGaleria");
+
+function imagenGaleria(e) {
+  console.log(imagen);
+}
+array.forEach((element) => {
+  console.log(element);
+});

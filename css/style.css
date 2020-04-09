@@ -6,11 +6,13 @@
   text-decoration: none;
 }
 
+
 html {
   margin: 0;
 }
 
 body {
+  width: 100%;
   margin: 0;
 }
 
@@ -290,12 +292,16 @@ footer {
 }
 
 /***************************************************************publicidadMobile***/
+#headerPublicidad {
+  color: #252850;
+}
+
 #desktopPublicidad {
   display: none;
 }
 
-#mobilePublicidad .card {
-  box-shadow: none;
+#mobilePublicidad {
+  padding: 5%;
 }
 
 #mobilePublicidad h4 {
@@ -312,6 +318,95 @@ h4 {
   position: absolute;
   right: 5%;
 }
+
+.campanias {
+  background-color: #252850;
+}
+
+
+#campanias {
+  padding-top: 0% !important;
+}
+
+#campanias div {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  color: white;
+  font-weight: bolder;
+}
+
+/*********************************************CM*/
+#headerCm {
+  background-color: #252850;
+  color: white;
+}
+
+#headerCm span {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+#headerCm img {
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+}
+
+#redes div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 3% 0 3% 0;
+
+}
+
+#fotografia div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 3% 0 3% 0;
+}
+
+#disenio div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 3% 0 3% 0;
+}
+
+#redesSociales p {
+  font-weight: bolder;
+}
+
+#galeria img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+/*********************************************************PLANES*/
+.plan {
+  width: 20%;
+}
+
+.plan .header {
+  color: red;
+  background-color: red;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.plan .contenido {
+  padding: 5%;
+}
+
+
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
@@ -338,6 +433,28 @@ h4 {
 
   #mobilePublicidad {
     height: 92vh;
+  }
+
+  #campanias span {
+    font-size: 1.5rem;
+  }
+
+  #headerCm span {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  #redesSociales img {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding-top: 5%;
+  }
+
+  #fotografia img {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -552,6 +669,84 @@ h4 {
     height: 0px;
     text-align: center;
   }
+
+  /************************************CM*/
+  #headerCm {
+    background-color: #51d2f648;
+    color: #252850;
+    font-weight: 800;
+  }
+
+  #headerCm div {
+    margin: 0 2% 0 2% !important;
+    align-items: center;
+  }
+
+  #redesSociales h2,
+  p {
+    color: #252850;
+  }
+
+  #fotoproducto h2 {
+    color: #252850;
+  }
+
+  #fotografias h2,
+  p {
+    color: #252850;
+  }
+
+  #emailMkt h2 {
+    color: #252850;
+  }
+
+  #headerCm img {
+    width: 20vw !important;
+    height: 25vh;
+    margin-bottom: 5%;
+  }
+
+  #headerCm div span {
+    font-size: 1.2rem;
+    justify-content: center;
+  }
+
+  #headerCm #redes,
+  #fotografia,
+  #disenio {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #disenio {
+    align-items: baseline;
+    padding-bottom: 5%;
+  }
+
+  #fotoproducto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #fotografias {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #btnFotoDesktop {
+    margin-top: 10%;
+  }
+
+  #galeria img {
+    transition: all 0.3s ease-in;
+  }
+
+  #galeria img:hover {
+    transform: scale(1.2);
+    z-index: 100000;
+  }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
