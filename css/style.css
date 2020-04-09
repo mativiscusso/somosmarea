@@ -390,23 +390,16 @@ h4 {
 
 /*********************************************************PLANES*/
 .plan {
-  width: 20%;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .plan .header {
-  color: red;
-  background-color: red;
-  height: 20vh;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-
-.plan .contenido {
-  padding: 5%;
-}
-
-
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
