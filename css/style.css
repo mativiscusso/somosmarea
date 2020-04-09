@@ -401,6 +401,36 @@ h4 {
   flex-direction: column;
 }
 
+#contacto {
+  width: 80%;
+}
+
+#contacto label {
+  font-weight: 400;
+}
+
+#contacto input {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid #252850;
+}
+
+#contacto select {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid #252850;
+}
+
+#contacto textarea {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid #252850;
+}
+
+
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
   .brand {
@@ -448,6 +478,10 @@ h4 {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #contacto {
+    width: 80%;
   }
 }
 
@@ -738,6 +772,10 @@ h4 {
   #galeria img:hover {
     transform: scale(1.2);
     z-index: 100000;
+  }
+
+  #contacto {
+    width: 40%;
   }
 
 }
