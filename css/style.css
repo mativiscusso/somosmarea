@@ -234,23 +234,11 @@ a.nav-item:hover {
 }
 
 u {
-  position: relative;
-  text-decoration: none;
-  color: inherit;
+  color: white;
+  text-shadow: 1px 2px 2px black;
 }
 
-u::after {
-  content: "";
-  position: absolute;
-  bottom: -0.125rem;
-  left: -0.5rem;
-  right: -0.5rem;
-  height: 0.75rem;
-  z-index: -1;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 
 main {
   color: white;
@@ -402,7 +390,7 @@ h4 {
 }
 
 #contacto {
-  width: 80%;
+  padding: 5%;
 }
 
 #contacto label {
@@ -430,6 +418,156 @@ h4 {
   border-bottom: 2px solid #252850;
 }
 
+#listaContacto {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-left: 3%;
+  border-left: 2px solid #252850;
+}
+
+#listaContacto span {
+  display: flex;
+  align-items: center;
+}
+
+#listaContacto li {
+  padding-left: 3%;
+}
+
+#iconosContacto {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#iconosContacto li i {
+  display: flex;
+  justify-content: center;
+}
+
+#infoContacto {
+  display: flex;
+  justify-content: center;
+}
+
+/************************************************************************WEB*/
+#webBody {
+  background-color: #E0E5EC;
+  border-bottom-left-radius: 2rem;
+}
+
+.multi-button {
+  display: flex;
+  flex-direction: column;
+}
+
+.btnWeb {
+  text-align: center;
+}
+
+.multi-button button {
+  background-color: #E0E5EC;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.8), -9px -9px 16px rgba(255, 255, 255, 0.5);
+  font-size: 1.3rem;
+  font-weight: 800;
+  height: 15vh;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  margin-right: 3%;
+  overflow: hidden;
+  position: relative;
+  text-transform: uppercase;
+  width: 80%;
+}
+
+.multi-button button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(-100%);
+
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 0.13) 0%,
+      rgba(255, 255, 255, 0.13) 77%,
+      rgba(255, 255, 255, 0.5) 92%,
+      rgba(255, 255, 255, 0.3) 100%);
+}
+
+.multi-button button:hover:after {
+  opacity: 1;
+  top: 0;
+  left: 0;
+  transform: translateX(0);
+  transition-property: transform, opacity;
+  transition-duration: 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+
+.multi-button button:active:after {
+  opacity: 0;
+}
+
+#serviciosWeb {
+  background-color: #252850;
+  color: #51d1f6;
+  text-align: center;
+}
+
+#serviciosWeb h4 {
+  color: #51d1f6;
+}
+
+#tienda p,
+#appweb p,
+#paginaWeb p {
+  font-weight: 400;
+}
+
+.contenedorText h1 {
+  position: relative;
+  color: black;
+  font-size: 1.1rem;
+}
+
+
+.contenedorText h1 span {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: #E0E5EC;
+  animation: escribir 4s steps(100);
+}
+
+@keyframes escribir {
+  from {
+    width: 100%
+  }
+
+  to {
+    width: 0
+  }
+}
+
+hr.style-one {
+  border: 0;
+  height: 1px;
+  background: gray;
+  background-image: linear-gradient(to right, rgb(224, 224, 224), gray, rgb(226, 223, 223));
+}
+
+#fraseJobs p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+}
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
@@ -480,305 +618,428 @@ h4 {
     margin-right: auto;
   }
 
-  #contacto {
-    width: 80%;
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  #ocultar {
-    display: none;
+  .multi-button button {
+    font-size: 2rem;
+    height: 20vh;
+    width: 60%;
   }
 
-  #basicExampleNav {
-    justify-content: flex-end;
+  #headerWeb h3 {
+    padding-top: 5%;
+    font-size: 2.8rem;
   }
 
-  .brand {
+  #ofrecemosWeb {
+    margin: 0;
+    width: 100%;
     font-size: 1.5rem;
   }
 
-  nav {
-    display: flex;
-  }
-
-  #navbarDropdown {
-    padding-top: 0.5rem;
-  }
-
-  .menu {
-    width: 60%;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  #nav a {
-    color: #252850;
-    font-size: 1.3rem;
-    font-weight: 600;
-  }
-
-  /***** EFECTO HOVER MENU ***/
-  .nav-item {
-    transition: all 0.3s;
-  }
-
-  .nav-item:hover {
-    background-color: #25285096;
-    border-bottom-left-radius: 0.5rem;
-  }
-
-  #nav a:hover {
-    color: #51d1f6;
-  }
-
-  .dropdown-menu.show {
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-    border-bottom-right-radius: 1rem;
-  }
-
-  #navbarDropdown:hover {
-    background-color: #25285096;
-    border-bottom-left-radius: 0.5rem;
-  }
-
-  /**********/
-
-  #logo img {
-    width: 35%;
-    transition: all 0.2s;
-  }
-
-  #logo img:hover {
-    width: 36%;
-  }
-
-  #frase {
-    width: 100%;
-    top: 45%;
-    font-size: 3rem;
-  }
-
-  #socaleHeader {
-    padding-top: 2%;
-  }
-
-  #socaleHeader h5 {
-    line-height: 1.4rem;
-    font-size: 1.8rem;
-  }
-
-  .title {
-    height: 12vh;
-  }
-
-  .title h3 {
-    font-size: 1.8rem;
-  }
-
-  .py-5 h1 {
-    font-size: 3.5rem;
-  }
-
-  #mktServicio {
+  #ofrecemosWeb p {
+    font-weight: bolder;
     font-size: 1.3rem;
   }
 
-  #callHome {
-    font-size: 1.2rem;
+
+  #tienda,
+  #appweb,
+  #paginaWeb {
+    font-size: 1.6rem;
   }
 
-  #plataformas img {
-    width: 10%;
+  .contenedorText h1 {
+    font-size: 1.8rem;
   }
 
-  footer {
-    font-size: 1rem;
-  }
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    #ocultar {
+      display: none;
+    }
 
-  /**********************************************************************************publicidadDigital*********/
-  #desktopPublicidad {
-    display: block;
-    color: #252850;
-  }
+    #basicExampleNav {
+      justify-content: flex-end;
+    }
 
-  #mobilePublicidad {
-    display: none;
-  }
+    .brand {
+      font-size: 1.5rem;
+    }
 
-  #desktopPublicidad a {
-    color: white;
-    font-size: 1.1rem;
-  }
+    nav {
+      display: flex;
+    }
 
-  .main {
-    font-weight: 400;
-  }
+    #navbarDropdown {
+      padding-top: 0.5rem;
+    }
 
-  article {
-    width: 80%;
-    padding: 5% 0 5% 0;
-  }
+    .menu {
+      width: 60%;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+    }
 
-  article img {
-    display: block !important;
-  }
+    #nav a {
+      color: #252850;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
 
-  #video {
-    position: absolute;
-    z-index: 100;
-    width: 100%;
-    top: 240vh;
-  }
+    /***** EFECTO HOVER MENU ***/
+    .nav-item {
+      transition: all 0.3s;
+    }
 
-  #video iframe {
-    height: 60vh;
-    width: 50vw;
-    border-radius: 1rem;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  }
+    .nav-item:hover {
+      background-color: #25285096;
+      border-bottom-left-radius: 0.5rem;
+    }
 
-  hr {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0.75),
-        rgba(0, 0, 0, 0));
-  }
+    #nav a:hover {
+      color: #51d1f6;
+    }
 
-  .campanias {
-    background-color: #252850;
-    height: 140vh;
-    color: white;
-    transform: skewY(2deg);
-    -moz-transform: skewY(2deg);
-    -o-transform: skewY(2deg);
-  }
+    .dropdown-menu.show {
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+      border-bottom-right-radius: 1rem;
+    }
 
-  .campanias .contenido {
-    transform: skewY(-2deg);
-    -moz-transform: skewY(-2deg);
-    -o-transform: skewY(-2deg);
-  }
+    #navbarDropdown:hover {
+      background-color: #25285096;
+      border-bottom-left-radius: 0.5rem;
+    }
 
-  #campanias {
-    display: flex;
-    justify-content: space-between;
-  }
+    /**********/
 
-  #campanias div {
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 400;
-    font-size: 1.4rem;
-  }
+    #logo img {
+      width: 35%;
+      transition: all 0.2s;
+    }
 
-  .plataformasMkt {
-    margin-top: 25%;
-  }
+    #logo img:hover {
+      width: 36%;
+    }
 
-  .plataformasMkt ul {
-    padding-left: 3%;
-  }
+    #frase {
+      width: 100%;
+      top: 45%;
+      font-size: 3rem;
+    }
 
-  hr {
-    width: 50%;
-    border: 5px solid #252850;
-    border-radius: 300px/10px;
-    height: 0px;
-    text-align: center;
-  }
+    #socaleHeader {
+      padding-top: 2%;
+    }
 
-  /************************************CM*/
-  #headerCm {
-    background-color: #51d2f648;
-    color: #252850;
-    font-weight: 800;
-  }
+    #socaleHeader h5 {
+      line-height: 1.4rem;
+      font-size: 1.8rem;
+    }
 
-  #headerCm div {
-    margin: 0 2% 0 2% !important;
-    align-items: center;
-  }
+    .title {
+      height: 12vh;
+    }
 
-  #redesSociales h2,
-  p {
-    color: #252850;
-  }
+    .title h3 {
+      font-size: 1.8rem;
+    }
 
-  #fotoproducto h2 {
-    color: #252850;
-  }
+    .py-5 h1 {
+      font-size: 3.5rem;
+    }
 
-  #fotografias h2,
-  p {
-    color: #252850;
-  }
+    #mktServicio {
+      font-size: 1.3rem;
+    }
 
-  #emailMkt h2 {
-    color: #252850;
-  }
+    #callHome {
+      font-size: 1.2rem;
+    }
 
-  #headerCm img {
-    width: 20vw !important;
-    height: 25vh;
-    margin-bottom: 5%;
-  }
+    #plataformas img {
+      width: 10%;
+    }
 
-  #headerCm div span {
-    font-size: 1.2rem;
-    justify-content: center;
-  }
+    footer {
+      font-size: 1rem;
+    }
 
-  #headerCm #redes,
-  #fotografia,
-  #disenio {
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-  }
+    /**********************************************************************************publicidadDigital*********/
+    #desktopPublicidad {
+      display: block;
+      color: #252850;
+    }
 
-  #disenio {
-    align-items: baseline;
-    padding-bottom: 5%;
-  }
+    #mobilePublicidad {
+      display: none;
+    }
 
-  #fotoproducto {
-    margin-left: auto;
-    margin-right: auto;
-  }
+    #desktopPublicidad a {
+      color: white;
+      font-size: 1.1rem;
+    }
 
-  #fotografias {
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .main {
+      font-weight: 400;
+    }
 
-  #btnFotoDesktop {
-    margin-top: 10%;
-  }
+    article {
+      width: 80%;
+      padding: 5% 0 5% 0;
+    }
 
-  #galeria img {
-    transition: all 0.3s ease-in;
-  }
+    article img {
+      display: block !important;
+    }
 
-  #galeria img:hover {
-    transform: scale(1.2);
-    z-index: 100000;
-  }
+    #video {
+      position: absolute;
+      z-index: 100;
+      width: 100%;
+      top: 240vh;
+    }
 
-  #contacto {
-    width: 40%;
-  }
+    #video iframe {
+      height: 60vh;
+      width: 50vw;
+      border-radius: 1rem;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
 
+    hr {
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0.75),
+          rgba(0, 0, 0, 0));
+    }
+
+    .campanias {
+      background-color: #252850;
+      height: 140vh;
+      color: white;
+      transform: skewY(2deg);
+      -moz-transform: skewY(2deg);
+      -o-transform: skewY(2deg);
+    }
+
+    .campanias .contenido {
+      transform: skewY(-2deg);
+      -moz-transform: skewY(-2deg);
+      -o-transform: skewY(-2deg);
+    }
+
+    #campanias {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #campanias div {
+      width: 200px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 400;
+      font-size: 1.4rem;
+    }
+
+    .plataformasMkt {
+      margin-top: 25%;
+    }
+
+    .plataformasMkt ul {
+      padding-left: 3%;
+    }
+
+    hr {
+      width: 50%;
+      border: 5px solid #252850;
+      border-radius: 300px/10px;
+      height: 0px;
+      text-align: center;
+    }
+
+    /************************************CM*/
+    #headerCm {
+      background-color: #51d2f648;
+      color: #252850;
+      font-weight: 800;
+    }
+
+    #headerCm div {
+      margin: 0 2% 0 2% !important;
+      align-items: center;
+    }
+
+    #redesSociales h2,
+    p {
+      color: #252850;
+    }
+
+    #fotoproducto h2 {
+      color: #252850;
+    }
+
+    #fotografias h2,
+    p {
+      color: #252850;
+    }
+
+    #emailMkt h2 {
+      color: #252850;
+    }
+
+    #headerCm img {
+      width: 20vw !important;
+      height: 25vh;
+      margin-bottom: 5%;
+    }
+
+    #headerCm div span {
+      font-size: 1.2rem;
+      justify-content: center;
+    }
+
+    #headerCm #redes,
+    #fotografia,
+    #disenio {
+      text-align: center;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    #disenio {
+      align-items: baseline;
+      padding-bottom: 5%;
+    }
+
+    #fotoproducto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #fotografias {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #btnFotoDesktop {
+      margin-top: 10%;
+    }
+
+    #galeria img {
+      transition: all 0.3s ease-in;
+    }
+
+    #galeria img:hover {
+      transform: scale(1.2);
+      z-index: 100000;
+    }
+
+    #listaContacto {
+      font-size: 1.5rem;
+      font-weight: bolder;
+      margin-left: 7%;
+      border-left: 2px solid #252850;
+    }
+
+    #listaContacto span {
+      display: flex;
+      align-items: center;
+    }
+
+    #listaContacto li {
+      margin-left: 7%;
+    }
+
+    #iconosContacto {
+      font-size: 1.5rem;
+      font-weight: bolder;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    #iconosContacto li i {
+      display: flex;
+      justify-content: center;
+    }
+
+    .form-group {
+      margin-bottom: 0.3rem !important;
+      display: flex;
+    }
+
+    .form-group label {
+      margin-bottom: 0;
+      display: flex;
+      align-items: flex-end;
+      width: 30%;
+    }
+
+    /*******************************************************web*/
+    #webBody {
+      background-color: transparent;
+    }
+
+    .multi-button {
+      display: flex;
+      flex-direction: initial;
+      justify-content: space-evenly;
+    }
+
+    .multi-button button {
+      font-size: 2rem;
+      height: 40vh;
+      width: 85%;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(333deg, rgba(255, 255, 255, 1) 0%, rgba(222, 222, 222, 1) 100%);
+      border-radius: 20rem;
+    }
+
+    #serviciosWeb h2 {
+      font-size: 2.5rem;
+    }
+
+    #serviciosWeb {
+      margin-top: 7rem;
+      transform: skewY(7deg);
+    }
+
+    #contenidoTransformar {
+      transform: skewY(-7deg);
+    }
+
+    #ofrecemosWeb p {
+      color: #51d1f6;
+    }
+
+    #tienda h3,
+    #appweb h3,
+    #paginaWeb h3 {
+      font-size: 2.5rem;
+    }
+
+    #tienda p,
+    #appweb p,
+    #paginaWeb p {
+      font-size: 1.5rem;
+    }
+
+    #tienda h6 {
+      font-size: 1.5rem;
+    }
+
+    .btnWeb {
+      width: 100%
+    }
+
+    .contenedorText h1 span {
+      background: white;
+    }
+  }
 }
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
