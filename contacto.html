@@ -57,67 +57,45 @@
       </div>
    </nav>
 
-   <div id="headerContacto" class="text-center py-3">
-      <h2 class="font-weight-bold">Contactanos</h2>
+   <div id="headerContacto" class="text-center pt-5">
+      <h1 class="font-weight-bold">Contactanos</h1>
+      <h3 class="font-weight-bolder">¿Que tal si charlamos?</h3>
+      <h4>Dejanos tus datos y nos comunicaremos a la brevedad</h4>
    </div>
-   <div class="row">
-      <div class="col-12 col-lg-6">
-         <form id="contacto" class="mx-auto">
-            <div class="form-group">
-               <label for="exampleFormControlInput1">Nombre</label>
-               <input type="text" class="form-control" id="nombre" name="nombre">
-            </div>
-            <div class="form-group">
-               <label for="exampleFormControlInput1">Empresa</label>
-               <input type="text" class="form-control" id="empresa" name="empresa">
-            </div>
-            <div class="form-group">
-               <label for="exampleFormControlInput1">Web</label>
-               <input type="url" class="form-control" id="web" name="web">
-            </div>
-            <div class="form-group">
-               <label for="exampleFormControlInput1">Telefono</label>
-               <input type="tel" class="form-control" id="tel" name="tel">
-            </div>
-            <div class="form-group">
-               <label for="exampleFormControlInput1">Email</label>
-               <input type="email" class="form-control" id="email" name="email">
-            </div>
-            <div class="form-group">
-               <label for="exampleFormControlSelect1">Servicio interesado</label>
-               <select class="form-control" id="servicios">
-                  <option value="" disabled selected>Elige tu opción</option>
-                  <option name="1">Publicidad Digital</option>
-                  <option name="2">Community Management</option>
-                  <option name="3">Desarrollo Web</option>
-                  <option name="4">A medida</option>
-               </select>
-            </div>
-            <div class="form-group">
-               <label for="exampleFormControlTextarea1">Mensaje</label>
-               <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
-            </div>
-            <button class="btn btn-blue btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit"
-               name="enviar">Enviar</button>
-         </form>
-      </div>
-      <div class="col-12 col-lg-6 my-auto">
-         <div id="infoContacto">
-            <ul id="iconosContacto">
-               <li><i class="far fa-user"></i></li>
-               <li><i class="fas fa-mobile-alt"></i></li>
-               <li><i class="fab fa-connectdevelop"></i></li>
-               <li><i class="far fa-envelope"></i></li>
-            </ul>
-            <ul id="listaContacto">
-               <li>Esteban Gigli</li>
-               <li>+54 9 3412551101</li>
-               <li>www.somosmarea.com</li>
-               <li>info@somosmarea.com</li>
-            </ul>
+   <div class="container">
+      <form id="contacto" class="mx-auto">
 
+         <div class="form-group">
+            <label for="exampleFormControlInput1">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre">
+            <label for="exampleFormControlInput1">Email</label>
+            <input type="email" class="form-control" id="email" name="email">
          </div>
-      </div>
+         <div class="form-group">
+            <label for="exampleFormControlInput1">Telefono</label>
+            <input type="tel" class="form-control" id="tel" name="tel">
+            <label for="exampleFormControlInput1">Empresa</label>
+            <input type="text" class="form-control" id="empresa" name="empresa">
+         </div>
+         <div class="form-group">
+            <label for="exampleFormControlSelect1">Servicio interesado</label>
+            <select class="form-control" id="servicios">
+               <option value="" disabled selected>Elige tu opción</option>
+               <option name="1">Publicidad Digital</option>
+               <option name="2">Community Management</option>
+               <option name="3">Desarrollo Web</option>
+               <option name="4">A medida</option>
+            </select>
+         </div>
+         <div class="form-group">
+            <label style="align-items: baseline; padding-top: 1%;width:12%"
+               for="exampleFormControlTextarea1">Mensaje</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
+         </div>
+         <button class="btn btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit"
+            name="enviar">Enviar</button>
+      </form>
+   </div>
    </div>
    <footer>
       <span>© 2020 Agencia MAREA | Todos los derechos reservados </span>

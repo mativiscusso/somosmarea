@@ -21,6 +21,10 @@ header {
   width: 100%;
 }
 
+p {
+  font-weight: 400;
+}
+
 .navbar {
   box-shadow: none !important;
 }
@@ -229,7 +233,6 @@ a.nav-item:hover {
 #socaleHeader h5 {
   line-height: 1.5rem;
   font-family: "Montserrat", sans-serif;
-  color: #252850;
   font-weight: bold;
 }
 
@@ -280,9 +283,6 @@ footer {
 }
 
 /***************************************************************publicidadMobile***/
-#headerPublicidad {
-  color: #252850;
-}
 
 #desktopPublicidad {
   display: none;
@@ -293,14 +293,10 @@ footer {
 }
 
 #mobilePublicidad h4 {
-  color: #252850;
   font-weight: 800;
 }
 
-#mobilePublicidad h2,
-h4 {
-  color: #252850;
-}
+
 
 .card .flecha {
   position: absolute;
@@ -389,9 +385,6 @@ h4 {
   flex-direction: column;
 }
 
-#contacto {
-  padding: 5%;
-}
 
 #contacto label {
   font-weight: 400;
@@ -401,28 +394,61 @@ h4 {
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  border-bottom: 2px solid #252850;
+  border-radius: 0;
+  border-bottom: 1px solid #25285091;
+  transition: all 0.3s ease;
 }
+
+#contacto input:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+  border-bottom: 2px solid #252850 !important;
+}
+
+#contacto select:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+  border-bottom: 2px solid #252850 !important;
+}
+
+#contacto textarea:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+  border-bottom: 2px solid #252850 !important;
+}
+
 
 #contacto select {
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  border-bottom: 2px solid #252850;
+  border-bottom: 1px solid #25285091;
+  transition: all 0.3s ease;
+
 }
 
 #contacto textarea {
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  border-bottom: 2px solid #252850;
+  border-bottom: 1px solid #25285091;
+  transition: all 0.3s ease;
+
+}
+
+#contacto button {
+  background-color: #252850;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  width: 50%;
 }
 
 #listaContacto {
   font-size: 1.5rem;
   font-weight: bolder;
   margin-left: 3%;
-  border-left: 2px solid #252850;
+  border-left: 1px solid #25285091;
 }
 
 #listaContacto span {
@@ -450,6 +476,11 @@ h4 {
 #infoContacto {
   display: flex;
   justify-content: center;
+}
+
+#headerContacto h4 {
+  font-size: 0.8rem;
+  margin-bottom: 10%;
 }
 
 /************************************************************************WEB*/
@@ -543,7 +574,22 @@ h4 {
   position: absolute;
   right: 0;
   width: 0;
-  background: #E0E5EC;
+  background: white;
+  animation: escribir 4s steps(100);
+}
+
+.contenedorTexto h1 {
+  position: relative;
+  color: black;
+  font-size: 0.6rem;
+}
+
+
+.contenedorTexto h1 span {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: white;
   animation: escribir 4s steps(100);
 }
 
@@ -568,6 +614,102 @@ hr.style-one {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.2rem;
 }
+
+#tecnologias {
+  display: flex;
+  justify-content: space-evenly;
+  color: rgb(133, 133, 133);
+  transition: all 0.3;
+}
+
+#tecnologias i {
+  font-size: 1.9rem;
+  transition: all 0.3;
+}
+
+#tecnologias i:hover {
+  color: black;
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+}
+
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
+
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
@@ -769,7 +911,6 @@ hr.style-one {
     /**********************************************************************************publicidadDigital*********/
     #desktopPublicidad {
       display: block;
-      color: #252850;
     }
 
     #mobilePublicidad {
@@ -798,7 +939,7 @@ hr.style-one {
       position: absolute;
       z-index: 100;
       width: 100%;
-      top: 240vh;
+      top: 220vh;
     }
 
     #video iframe {
@@ -875,24 +1016,6 @@ hr.style-one {
       align-items: center;
     }
 
-    #redesSociales h2,
-    p {
-      color: #252850;
-    }
-
-    #fotoproducto h2 {
-      color: #252850;
-    }
-
-    #fotografias h2,
-    p {
-      color: #252850;
-    }
-
-    #emailMkt h2 {
-      color: #252850;
-    }
-
     #headerCm img {
       width: 20vw !important;
       height: 25vh;
@@ -940,34 +1063,24 @@ hr.style-one {
       z-index: 100000;
     }
 
-    #listaContacto {
+    /***************************CONTACTO*/
+    #headerContacto h4 {
       font-size: 1.5rem;
-      font-weight: bolder;
-      margin-left: 7%;
-      border-left: 2px solid #252850;
+      margin-bottom: 3%;
     }
 
-    #listaContacto span {
-      display: flex;
-      align-items: center;
+    #contacto {
+      width: 70%;
     }
 
-    #listaContacto li {
-      margin-left: 7%;
+    #contacto button {
+      width: 30%;
     }
 
-    #iconosContacto {
-      font-size: 1.5rem;
-      font-weight: bolder;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
+    #contacto label {
+      font-weight: 400;
     }
 
-    #iconosContacto li i {
-      display: flex;
-      justify-content: center;
-    }
 
     .form-group {
       margin-bottom: 0.3rem !important;
@@ -975,6 +1088,7 @@ hr.style-one {
     }
 
     .form-group label {
+      margin-left: 2%;
       margin-bottom: 0;
       display: flex;
       align-items: flex-end;
@@ -1040,6 +1154,27 @@ hr.style-one {
 
     .contenedorText h1 span {
       background: white;
+    }
+
+    .contenedorTexto h1 {
+      font-size: 1.2rem;
+    }
+
+    #tecnologias i {
+      font-size: 3rem;
+    }
+
+    /**************************************PLANES***/
+    .plan {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      border: 0.05rem solid rgba(128, 128, 128, 0.2);
+    }
+
+    .plan .call {
+      margin-top: auto;
     }
   }
 }

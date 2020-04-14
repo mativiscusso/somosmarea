@@ -1,11 +1,1 @@
-VANTA.NET({
-   el: "#logo",
-   mouseControls: true,
-   touchControls: true,
-   minHeight: 200.00,
-   minWidth: 200.00,
-   scale: 1.00,
-   scaleMobile: 1.00,
-   color: 0x252850,
-   backgroundColor: 0x51d1f6
- })
+VANTA.NET({el:"#logo",mouseControls:!0,touchControls:!0,minHeight:200,minWidth:200,scale:1,scaleMobile:1,color:2435152,backgroundColor:5362166});
