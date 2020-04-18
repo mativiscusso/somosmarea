@@ -291,7 +291,7 @@ footer {
 
 #google,
 #facebook {
-  background-color: #51d1f6;
+  background-color: #51d2f648;
 }
 
 .plataformasMkt article {
@@ -335,8 +335,13 @@ footer {
 
 /*********************************************CM*/
 #headerCm {
-  background-color: #252850;
-  color: white;
+  background-color: #51d2f648;
+  color: #252850;
+}
+
+#headerCm span {
+  font-weight: bolder;
+  padding-top: 3%;
 }
 
 #headerCm span {
@@ -357,6 +362,10 @@ footer {
   text-align: center;
   padding: 3% 0 3% 0;
 
+}
+
+#fotoFotografiaCmPc {
+  display: none;
 }
 
 #fotografia div {
@@ -411,6 +420,12 @@ footer {
   flex-direction: column;
 }
 
+.plan {
+  width: 100%;
+  border: 0.05rem solid rgba(128, 128, 128, 0.2);
+}
+
+/***********************/
 
 #contacto label {
   font-weight: 400;
@@ -752,6 +767,18 @@ hr.style-one {
   }
 }
 
+.carousel .card {
+  box-shadow: none !important;
+}
+
+a.btnFooter {
+  color: #252850 !important;
+  transition: all 0.2s;
+}
+
+a.btnFooter:hover {
+  transform: scale(1.2);
+}
 
 
 
@@ -950,6 +977,7 @@ hr.style-one {
     }
 
     footer {
+      padding: 5% 0 2% 0;
       font-size: 1rem;
     }
 
@@ -965,6 +993,15 @@ hr.style-one {
     #desktopPublicidad a {
       color: white;
       font-size: 1.1rem;
+    }
+
+    #analitycs h3,
+    h2 {
+      font-size: 2.6rem;
+    }
+
+    #textoAnalitycs {
+      font-size: 1.2rem;
     }
 
     .main {
@@ -983,7 +1020,7 @@ hr.style-one {
       position: absolute;
       z-index: 100;
       width: 100%;
-      top: 220vh;
+      top: 240vh;
     }
 
     #video iframe {
@@ -1095,6 +1132,14 @@ hr.style-one {
       text-align: center;
       display: flex;
       justify-content: space-evenly;
+    }
+
+    #fotoFotografiaCmMobile {
+      display: none
+    }
+
+    #fotoFotografiaCmPc {
+      display: block;
     }
 
     #disenio {
