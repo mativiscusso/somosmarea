@@ -6,8 +6,7 @@
   text-decoration: none;
 }
 
-
-html {
+font html {
   margin: 0;
 }
 
@@ -241,8 +240,6 @@ u {
   text-shadow: 1px 2px 2px black;
 }
 
-
-
 main {
   color: white;
   text-align: center;
@@ -288,7 +285,6 @@ footer {
   display: none;
 }
 
-
 #google,
 #facebook {
   background-color: #51d2f648;
@@ -298,12 +294,9 @@ footer {
   padding: 3%;
 }
 
-
 #mobilePublicidad h4 {
   font-weight: 800;
 }
-
-
 
 .card .flecha {
   position: absolute;
@@ -313,7 +306,6 @@ footer {
 .campanias {
   background-color: #252850;
 }
-
 
 #campanias {
   padding-top: 0% !important;
@@ -353,7 +345,6 @@ footer {
   border-top-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-
 }
 
 #redes div {
@@ -361,7 +352,6 @@ footer {
   flex-direction: column;
   text-align: center;
   padding: 3% 0 3% 0;
-
 }
 
 #fotoFotografiaCmPc {
@@ -398,7 +388,7 @@ footer {
 
 #emailMkt {
   height: 25vh;
-  background-image: url('../img/mobile/r3.jpg');
+  background-image: url("../img/mobile/r3.jpg");
   background-attachment: fixed;
   background-size: auto;
 }
@@ -458,14 +448,12 @@ footer {
   border-bottom: 2px solid #252850 !important;
 }
 
-
 #contacto select {
   border-top: 0;
   border-left: 0;
   border-right: 0;
   border-bottom: 1px solid #25285091;
   transition: all 0.3s ease;
-
 }
 
 #contacto textarea {
@@ -474,7 +462,6 @@ footer {
   border-right: 0;
   border-bottom: 1px solid #25285091;
   transition: all 0.3s ease;
-
 }
 
 #contacto button {
@@ -526,7 +513,7 @@ footer {
 
 /************************************************************************WEB*/
 #webBody {
-  background-color: #E0E5EC;
+  background-color: #e0e5ec;
   border-bottom-left-radius: 2rem;
 }
 
@@ -543,7 +530,11 @@ footer {
   height: 20px;
   position: relative;
   width: 100%;
-  background: radial-gradient(ellipse farthest-side at top center, rgba(0, 0, 0, 0.08), transparent);
+  background: radial-gradient(
+    ellipse farthest-side at top center,
+    rgba(0, 0, 0, 0.08),
+    transparent
+  );
 }
 
 .gradient:before {
@@ -554,15 +545,30 @@ footer {
   right: 0;
   left: 0;
   height: 3px;
-  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(0, 0, 0, 0.02)), color-stop(rgba(0, 0, 0, 0.02)), to(transparent));
-  background: linear-gradient(left, transparent, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02), transparent);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(transparent),
+    color-stop(rgba(0, 0, 0, 0.02)),
+    color-stop(rgba(0, 0, 0, 0.02)),
+    to(transparent)
+  );
+  background: linear-gradient(
+    left,
+    transparent,
+    rgba(0, 0, 0, 0.02),
+    rgba(0, 0, 0, 0.02),
+    transparent
+  );
 }
 
 .multi-button button {
-  background-color: #E0E5EC;
+  background-color: #e0e5ec;
   border: none;
   border-radius: 1rem;
-  box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.8), -9px -9px 16px rgba(255, 255, 255, 0.5);
+  box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.8),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
   font-size: 1.3rem;
   font-weight: 800;
   height: 15vh;
@@ -586,11 +592,13 @@ footer {
   transform: translateX(-100%);
 
   background: rgba(255, 255, 255, 0.13);
-  background: linear-gradient(to right,
-      rgba(255, 255, 255, 0.13) 0%,
-      rgba(255, 255, 255, 0.13) 77%,
-      rgba(255, 255, 255, 0.5) 92%,
-      rgba(255, 255, 255, 0.3) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
 }
 
 .multi-button button:hover:after {
@@ -629,7 +637,6 @@ footer {
   font-size: 1.1rem;
 }
 
-
 .contenedorText h1 span {
   position: absolute;
   right: 0;
@@ -644,7 +651,6 @@ footer {
   font-size: 0.6rem;
 }
 
-
 .contenedorTexto h1 span {
   position: absolute;
   right: 0;
@@ -655,11 +661,11 @@ footer {
 
 @keyframes escribir {
   from {
-    width: 100%
+    width: 100%;
   }
 
   to {
-    width: 0
+    width: 0;
   }
 }
 
@@ -667,11 +673,16 @@ hr.style-one {
   border: 0;
   height: 1px;
   background: gray;
-  background-image: linear-gradient(to right, rgb(224, 224, 224), gray, rgb(226, 223, 223));
+  background-image: linear-gradient(
+    to right,
+    rgb(224, 224, 224),
+    gray,
+    rgb(226, 223, 223)
+  );
 }
 
 #fraseJobs p {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 1.2rem;
 }
 
@@ -780,9 +791,6 @@ a.btnFooter:hover {
   transform: scale(1.2);
 }
 
-
-
-
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
   .brand {
@@ -853,7 +861,6 @@ a.btnFooter:hover {
     font-weight: bolder;
     font-size: 1.3rem;
   }
-
 
   #tienda,
   #appweb,
@@ -1038,7 +1045,7 @@ a.btnFooter:hover {
 
     #emailMkt {
       height: 25vh;
-      background-image: url('../img/desktop/email-mkt.jpg');
+      background-image: url("../img/desktop/email-mkt.jpg");
       background-attachment: fixed;
       background-size: cover;
     }
@@ -1047,14 +1054,15 @@ a.btnFooter:hover {
       font-size: 2rem;
     }
 
-
     hr {
       border: 0;
       height: 1px;
-      background-image: linear-gradient(to right,
-          rgba(0, 0, 0, 0),
-          rgba(0, 0, 0, 0.75),
-          rgba(0, 0, 0, 0));
+      background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0)
+      );
     }
 
     .campanias {
@@ -1135,7 +1143,7 @@ a.btnFooter:hover {
     }
 
     #fotoFotografiaCmMobile {
-      display: none
+      display: none;
     }
 
     #fotoFotografiaCmPc {
@@ -1188,7 +1196,6 @@ a.btnFooter:hover {
       font-weight: 400;
     }
 
-
     .form-group {
       margin-bottom: 0.3rem !important;
       display: flex;
@@ -1218,7 +1225,11 @@ a.btnFooter:hover {
       height: 40vh;
       width: 85%;
       background: rgb(255, 255, 255);
-      background: linear-gradient(333deg, rgba(255, 255, 255, 1) 0%, rgba(222, 222, 222, 1) 100%);
+      background: linear-gradient(
+        333deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(222, 222, 222, 1) 100%
+      );
       border-radius: 20rem;
     }
 
@@ -1256,7 +1267,7 @@ a.btnFooter:hover {
     }
 
     .btnWeb {
-      width: 100%
+      width: 100%;
     }
 
     .contenedorText h1 span {

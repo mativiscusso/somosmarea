@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -63,8 +64,7 @@
       <h4>Dejanos tus datos y nos comunicaremos a la brevedad</h4>
    </div>
    <div class="container">
-      <form id="contacto" class="mx-auto">
-
+      <form id="contacto" class="mx-auto" accion="contacto.php" method="POST">
          <div class="form-group">
             <label for="exampleFormControlInput1">Nombre</label>
             <input type="text" class="form-control" id="nombre" name="nombre">
@@ -73,13 +73,13 @@
          </div>
          <div class="form-group">
             <label for="exampleFormControlInput1">Telefono</label>
-            <input type="tel" class="form-control" id="tel" name="tel">
+            <input type="tel" class="form-control" id="telefono" name="telefono">
             <label for="exampleFormControlInput1">Empresa</label>
             <input type="text" class="form-control" id="empresa" name="empresa">
          </div>
          <div class="form-group">
             <label for="exampleFormControlSelect1">Servicio interesado</label>
-            <select class="form-control" id="servicios">
+            <select class="form-control" id="servicios" name="servicios">
                <option value="" disabled selected>Elige tu opción</option>
                <option name="1">Publicidad Digital</option>
                <option name="2">Community Management</option>
@@ -92,8 +92,9 @@
                for="exampleFormControlTextarea1">Mensaje</label>
             <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
          </div>
-         <button class="btn btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit"
-            name="enviar">Enviar</button>
+         <button class="btn btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit" name="enviar"
+            id="btnEnviar">Enviar</button>
+
       </form>
    </div>
    </div>
@@ -125,8 +126,29 @@
       <!-- MDB core JavaScript -->
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js">
       </script>
-      <script src="/js/navbar.js"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
    </footer>
 </body>
 
 </html>
+<?php
+if($_POST){
+// Aquí podemos procesar los datos
+$nombre = $_POST['nombre'];
+$correo = $_POST['coreo'];
+$telefono = $_POST['telefono'];
+$empresa = $_POST['empresa'];
+$servicios = $_POST['servicio'];
+$mensaje = $_POST['mensaje'];
+
+
+$to = "mativiscusso@gmail.com";
+$subject = "Envio desde WEB";
+$txt = $nombre . " " . $correo . " " . $telefono . " " . $empresa . " " . $servicios . "\r\n" . $mensaje ;
+
+$headers = "From: info@somosmarea.com" . "\r\n";
+if (mail($to,$subject,$txt,$headers)) {
+   echo "<script>swal('Mensaje Enviado', '', 'success')</script>";
+} else  echo "<script>swal('Intente mas tarde', '', 'error')</script>";
+}
+?>
