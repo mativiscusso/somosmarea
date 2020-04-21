@@ -133,6 +133,8 @@
 </html>
 <?php
 if($_POST){
+   ini_set( 'display_errors', 1 );
+   error_reporting( E_ALL );
 // Aquí podemos procesar los datos
 $nombre = $_POST['nombre'];
 $correo = $_POST['coreo'];
@@ -141,12 +143,12 @@ $empresa = $_POST['empresa'];
 $servicios = $_POST['servicio'];
 $mensaje = $_POST['mensaje'];
 
-
-$to = "mativiscusso@gmail.com";
+$from = "info@somosmarea.com";
+$to = "info@somosmarea.com";
 $subject = "Envio desde WEB";
 $txt = $nombre . " " . $correo . " " . $telefono . " " . $empresa . " " . $servicios . "\r\n" . $mensaje ;
+$headers = "From:" . $from;
 
-$headers = "From: info@somosmarea.com" . "\r\n";
 if (mail($to,$subject,$txt,$headers)) {
    echo "<script>swal('Mensaje Enviado', '', 'success')</script>";
 } else  echo "<script>swal('Intente mas tarde', '', 'error')</script>";
