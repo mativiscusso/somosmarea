@@ -15,6 +15,36 @@
    <link rel="shortcut icon" href="../img/mobile/eme.jpg" type="image/x-icon">
    <!-- Font Awesome -->
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '492344318206066'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+ <img height="1" width="1" 
+src="https://www.facebook.com/tr?id=492344318206066&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138541964-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-138541964-1');
+</script>
+
 
 
    <title>Agencia MAREA</title>
@@ -52,7 +82,7 @@
                <a class="nav-link" href="/planes.html">PLANES</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="/contacto.html">CONTACTO</a>
+               <a class="nav-link" href="/contacto.php">CONTACTO</a>
             </li>
          </ul>
       </div>
@@ -99,6 +129,12 @@
    </div>
    </div>
    <footer>
+   <div id="whatsapp">
+         <a href="https://api.whatsapp.com/send?phone=5493412551101&text=Hola,%20te%20contacto%20desde%20la%20web..."
+            target="_blank">
+            <i class="fab fa-whatsapp z-depth-2 animated bounce"></i>
+         </a>
+      </div>
       <div id="botonesRedes" class="text-center">
          <ul>
             <a class="btnFooter" href="https://www.facebook.com/agenciamarea1/">
@@ -131,26 +167,37 @@
 </body>
 
 </html>
+
 <?php
-if($_POST){
-   ini_set( 'display_errors', 1 );
-   error_reporting( E_ALL );
-// Aquí podemos procesar los datos
-$nombre = $_POST['nombre'];
-$correo = $_POST['coreo'];
-$telefono = $_POST['telefono'];
-$empresa = $_POST['empresa'];
-$servicios = $_POST['servicio'];
-$mensaje = $_POST['mensaje'];
+use PHPMailer\PHPMailer\PHPMailer;
+require '../vendor/autoload.php';
+    $mail = new PHPMailer;
+    $mail->isSMTP();
+    $mail->Host = 'smtp.hostinger.com.ar';
+    $mail->Port = 587;
+    $mail->SMTPAuth = true;
+    $mail->Username = 'web@somosmarea.com';
+    $mail->Password = '4682Esteban4682';
+    $mail->setFrom('web@somosmarea.com', 'Formulario Web');
+    $mail->addAddress('web@somosmarea.com', 'Formulario Web');
+    if ($mail->addReplyTo($_POST['email'], $_POST['name'])) {
+        $mail->Subject = 'somosmarea.com - Contacto';
+        $mail->isHTML(false);
+        $mail->Body = <<<EOT
+                        nombre : {$_POST['nombre']}
+                        correo : {$_POST['coreo']}
+                        telefono : {$_POST['telefono']}
+                        empresa : {$_POST['empresa']}
+                        servicios : {$_POST['servicio']}
+                        mensaje : {$_POST['mensaje']}
+                        EOT;
+        if (!$mail->send()) {
+         echo "<script>swal('Intente mas tarde', '', 'error')</script>";
+        } else {
+         echo "<script>swal('Mensaje Enviado', '', 'success')</script>";
+        }
+    } else {
+           echo "<script>swal('Email invalido', '', 'success')</script>";
+    }
 
-$from = "info@somosmarea.com";
-$to = "info@somosmarea.com";
-$subject = "Envio desde WEB";
-$txt = $nombre . " " . $correo . " " . $telefono . " " . $empresa . " " . $servicios . "\r\n" . $mensaje ;
-$headers = "From:" . $from;
-
-if (mail($to,$subject,$txt,$headers)) {
-   echo "<script>swal('Mensaje Enviado', '', 'success')</script>";
-} else  echo "<script>swal('Intente mas tarde', '', 'error')</script>";
-}
 ?>

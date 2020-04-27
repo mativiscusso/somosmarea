@@ -530,11 +530,9 @@ footer {
   height: 20px;
   position: relative;
   width: 100%;
-  background: radial-gradient(
-    ellipse farthest-side at top center,
-    rgba(0, 0, 0, 0.08),
-    transparent
-  );
+  background: radial-gradient(ellipse farthest-side at top center,
+      rgba(0, 0, 0, 0.08),
+      transparent);
 }
 
 .gradient:before {
@@ -545,22 +543,18 @@ footer {
   right: 0;
   left: 0;
   height: 3px;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(transparent),
-    color-stop(rgba(0, 0, 0, 0.02)),
-    color-stop(rgba(0, 0, 0, 0.02)),
-    to(transparent)
-  );
-  background: linear-gradient(
-    left,
-    transparent,
-    rgba(0, 0, 0, 0.02),
-    rgba(0, 0, 0, 0.02),
-    transparent
-  );
+  background: -webkit-gradient(linear,
+      left top,
+      right top,
+      from(transparent),
+      color-stop(rgba(0, 0, 0, 0.02)),
+      color-stop(rgba(0, 0, 0, 0.02)),
+      to(transparent));
+  background: linear-gradient(left,
+      transparent,
+      rgba(0, 0, 0, 0.02),
+      rgba(0, 0, 0, 0.02),
+      transparent);
 }
 
 .multi-button button {
@@ -592,13 +586,11 @@ footer {
   transform: translateX(-100%);
 
   background: rgba(255, 255, 255, 0.13);
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0.13) 0%,
-    rgba(255, 255, 255, 0.13) 77%,
-    rgba(255, 255, 255, 0.5) 92%,
-    rgba(255, 255, 255, 0.3) 100%
-  );
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 0.13) 0%,
+      rgba(255, 255, 255, 0.13) 77%,
+      rgba(255, 255, 255, 0.5) 92%,
+      rgba(255, 255, 255, 0.3) 100%);
 }
 
 .multi-button button:hover:after {
@@ -673,12 +665,10 @@ hr.style-one {
   border: 0;
   height: 1px;
   background: gray;
-  background-image: linear-gradient(
-    to right,
-    rgb(224, 224, 224),
-    gray,
-    rgb(226, 223, 223)
-  );
+  background-image: linear-gradient(to right,
+      rgb(224, 224, 224),
+      gray,
+      rgb(226, 223, 223));
 }
 
 #fraseJobs p {
@@ -791,6 +781,31 @@ a.btnFooter:hover {
   transform: scale(1.2);
 }
 
+/***** Whatsapp *****/
+#whatsapp {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1000;
+}
+
+#whatsapp i {
+  background-color: #25D366;
+  color: white;
+  font-size: 2.5rem;
+  border-radius: 40%;
+  padding: 25%;
+  transition: all 0.2s;
+}
+
+#whatsapp i:hover {
+  transform: scale(1.15);
+}
+
+#whatsapp i:active {
+  transform: scale(0.8);
+}
+
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
   .brand {
@@ -870,6 +885,11 @@ a.btnFooter:hover {
 
   .contenedorText h1 {
     font-size: 1.8rem;
+  }
+
+  #whatsapp {
+    position: fixed;
+    right: 60px;
   }
 
   /* Large devices (desktops, 992px and up) */
@@ -1057,12 +1077,10 @@ a.btnFooter:hover {
     hr {
       border: 0;
       height: 1px;
-      background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0.75),
-        rgba(0, 0, 0, 0)
-      );
+      background-image: linear-gradient(to right,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0.75),
+          rgba(0, 0, 0, 0));
     }
 
     .campanias {
@@ -1225,11 +1243,9 @@ a.btnFooter:hover {
       height: 40vh;
       width: 85%;
       background: rgb(255, 255, 255);
-      background: linear-gradient(
-        333deg,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(222, 222, 222, 1) 100%
-      );
+      background: linear-gradient(333deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(222, 222, 222, 1) 100%);
       border-radius: 20rem;
     }
 
@@ -1293,6 +1309,29 @@ a.btnFooter:hover {
 
     .plan .call {
       margin-top: auto;
+    }
+
+    /******* Desktop *******/
+    #whatsapp {
+      position: fixed;
+      bottom: 40px;
+      right: 80px;
+    }
+
+    #whatsapp i {
+      background-color: #25D366;
+      color: white;
+      font-size: 3rem;
+      border-radius: 40%;
+      transition: all 0.2s;
+    }
+
+    #whatsapp i:hover {
+      transform: scale(1.25);
+    }
+
+    #whatsapp i:active {
+      transform: scale(0.8);
     }
   }
 }
