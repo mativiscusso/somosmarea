@@ -7,10 +7,12 @@
    <link rel="stylesheet" href="../css/style.min.css">
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-   <!-- Bootstrap core CSS -->
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-   <!-- Material Design Bootstrap -->
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/css/mdb.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="../css/mdb.min.css" rel="stylesheet">
+  <!-- AnimacionCSS -->
+  <link rel="stylesheet" href="../css/modules/animations-extended.min.css">
    <link rel="shortcut icon" href="../img/mobile/eme.jpg" type="image/x-icon">
    <!-- Font Awesome -->
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -71,17 +73,17 @@
                   aria-expanded="false"> SERVICIOS</a>
 
                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="/servicios/publicidad.php">Publicidad Digital</a>
-                  <a class="dropdown-item" href="/servicios/web.php">Desarrollo Web</a>
-                  <a class="dropdown-item" href="/servicios/cm.php">Community Management</a>
+                  <a class="dropdown-item" href="/servicios/publicidad">Publicidad Digital</a>
+                  <a class="dropdown-item" href="/servicios/web">Desarrollo Web</a>
+                  <a class="dropdown-item" href="/servicios/cm">Community Management</a>
                </div>
                <!-- Basic dropdown -->
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="/planes.php">PLANES</a>
+               <a class="nav-link" href="/planes">PLANES</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="/contacto.php">CONTACTO</a>
+               <a class="nav-link" href="/contacto">CONTACTO</a>
             </li>
          </ul>
       </div>

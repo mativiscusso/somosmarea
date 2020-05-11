@@ -3,8 +3,8 @@ require_once('../partials/header.php')
 ?>
 
    <div id="headerPublicidad" class="text-center py-5">
-      <h1 class="font-weight-bold">MARKETING DIGITAL</h1>
-      <h2>PUBLICIDAD ONLINE</h2>
+      <h1 class="font-weight-bold animated fadeIn">MARKETING DIGITAL</h1>
+      <h2 class="animated fadeIn">PUBLICIDAD ONLINE</h2>
       <!-- <img src="../img/desktop/publicidades.jpg" class="img-fluid" alt="plataformasAds"> -->
    </div>
    <section id="headerCm" class="py-5">
@@ -43,19 +43,19 @@ require_once('../partials/header.php')
             </p>
          </div>
          <div id="campanias" class="pt-5">
-            <div data-aos="zoom-in" class="blue-gradient color-block mb-3 mx-auto rounded-circle z-depth-1">
+            <div data-aos="zoom-in" class="blue-gradient color-block mb-3 mx-auto rounded-circle z-depth-1 animated pulse infinite slower">
                <span>Banding</span>
             </div>
-            <div data-aos="zoom-in-up" class="blue-gradient color-block mb-3 mx-auto rounded-circle z-depth-1">
+            <div data-aos="zoom-in-up" class="blue-gradient color-block mb-3 mx-auto rounded-circle z-depth-1 animated pulse infinite slow">
                <span>Alcance</span>
             </div>
-            <div data-aos="zoom-in-down" class="blue-gradient color-block mb-3 mx-auto rounded-circle z-depth-1">
+            <div data-aos="zoom-in-down" class="blue-gradient color-block mb-3 mx-auto rounded-circle z-depth-1 animated pulse infinite slower">
                <span>Interaccion</span>
             </div>
-            <div data-aos="zoom-in-left" class="blue-gradient color-block mb-3 mx-auto rounded-circle z-depth-1">
+            <div data-aos="zoom-in-left" class="blue-gradient color-block mb-3 mx-auto rounded-circle z-depth-1 animated pulse infinite slow">
                <span>Trafico</span>
             </div>
-            <div data-aos="zoom-in-right" class="blue-gradient color-block mb-3 mx-auto rounded-circle z-depth-1">
+            <div data-aos="zoom-in-right" class="blue-gradient color-block mb-3 mx-auto rounded-circle z-depth-1 animated pulse infinite slower">
                <span>Conversiones</span>
             </div>
          </div>
@@ -74,7 +74,7 @@ require_once('../partials/header.php')
 
    <div id="mobilePublicidad" class="py-5">
       <section class="plataformasMkt">
-         <article id="google" class="mx-auto">
+         <article id="google" class="mx-auto wow fadeInUp">
             <div class="row">
                <div class="col-12 col-md-6"><img class="img-fluid mr-auto" src="../img/desktop/google.jpg"
                      alt="googleAds">
@@ -121,7 +121,7 @@ require_once('../partials/header.php')
             </div>
          </article>
 
-         <article id="mercadoLibre" class="mx-auto">
+         <article id="mercadoLibre" class="mx-auto wow fadeInUp">
             <div class="row">
                <div class="col-12 col-md-6 "><img class="img-fluid ml-auto" src="../img/desktop/ml.jpg"
                      alt="mercadolibre"></div>
@@ -155,7 +155,7 @@ require_once('../partials/header.php')
             </div>
          </article>
 
-         <article id="facebook" class="mx-auto">
+         <article id="facebook" class="mx-auto wow fadeInUp">
             <div class="row">
                <div class="col-12 col-md-6 "><img class="img-fluid mr-auto" src="../img/desktop/facebook.jpg"
                      alt="facebookAds">
@@ -177,7 +177,7 @@ require_once('../partials/header.php')
             </div>
          </article>
 
-         <article id="instagram" class="mx-auto">
+         <article id="instagram" class="mx-auto wow fadeInUp">
             <div class="row">
                <div class="col-12 col-md-6"><img class="img-fluid ml-auto" src="/img/desktop/instagram.jpg"
                      alt="instagramAds">
@@ -212,7 +212,7 @@ require_once('../partials/header.php')
    </div>
    <div id="desktopPublicidad" class="main py-5">
       <section class="plataformasMkt">
-         <article id="google" class="mx-auto">
+         <article id="google" class="mx-auto wow fadeIn">
             <div class="row">
                <div class="col-12 col-md-6"><img class="img-fluid mr-auto" src="../img/desktop/google.jpg"
                      alt="googleAds">
@@ -270,7 +270,7 @@ require_once('../partials/header.php')
             </div>
          </article>
 
-         <article id="mercadoLibre" class="mx-auto">
+         <article id="mercadoLibre" class="mx-auto wow fadeInLeft">
             <div class="row">
                <div class="col-12 col-md-6">
                   <h2 class="font-weight-bold">MERCADO LIBRE</h2>
@@ -302,7 +302,7 @@ require_once('../partials/header.php')
             </div>
          </article>
 
-         <article id="facebook" class="mx-auto">
+         <article id="facebook" class="mx-auto wow fadeInRight">
             <div class="row">
                <div class="col-12 col-md-6 "><img class="img-fluid mr-auto" src="../img/desktop/facebook.jpg"
                      alt="facebookAds">
@@ -322,7 +322,7 @@ require_once('../partials/header.php')
             </div>
          </article>
 
-         <article id="instagram" class="mx-auto">
+         <article id="instagram" class="mx-auto wow fadeInLeft">
             <div class="row">
                <div class="col-12 col-md-6">
                   <h2 class="font-weight-bold">INSTAGRAM ADS</h2>

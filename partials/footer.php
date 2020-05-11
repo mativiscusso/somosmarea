@@ -20,22 +20,24 @@
    </div>
    <span>© 2020 Agencia MAREA | Todos los derechos reservados </span>
 
-   <!-- JQuery -->
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-   </script>
-   <!-- Bootstrap tooltips -->
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
-   </script>
-
-   <!-- Bootstrap core JavaScript -->
-   <script type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-   <!-- MDB core JavaScript -->
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js">
-   </script>
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="../js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="../js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+  <!--- Animacion Wow --->
+   <script src="../js/modules/wow.js"></script>
    <script src="/js/navbar.js"></script>
    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-
    <script async src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </footer>
 </body>

@@ -9,9 +9,9 @@
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
    <!-- Bootstrap core CSS -->
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/bootstrap.min.css" rel="stylesheet">
    <!-- Material Design Bootstrap -->
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/css/mdb.min.css" rel="stylesheet">
+   <link href="css/mdb.min.css" rel="stylesheet">
    <link rel="shortcut icon" href="img/mobile/eme.jpg" type="image/x-icon">
    <!-- Font Awesome -->
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -45,17 +45,17 @@
                         aria-expanded="false"> SERVICIOS</a>
 
                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="/servicios/publicidad.php">Publicidad Digital</a>
-                        <a class="dropdown-item" href="/servicios/web.php">Desarrollo Web</a>
-                        <a class="dropdown-item" href="/servicios/cm.php">Community Management</a>
+                        <a class="dropdown-item" href="/servicios/publicidad">Publicidad Digital</a>
+                        <a class="dropdown-item" href="/servicios/web">Desarrollo Web</a>
+                        <a class="dropdown-item" href="/servicios/cm">Community Management</a>
                      </div>
                      <!-- Basic dropdown -->
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="/planes.php">PLANES</a>
+                     <a class="nav-link" href="/planes">PLANES</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="/contacto.php">CONTACTO</a>
+                     <a class="nav-link" href="/contacto">CONTACTO</a>
                   </li>
 
                </ul>
@@ -168,29 +168,26 @@
       </div>
       <span>© 2020 Agencia MAREA | Todos los derechos reservados </span>
 
-      <!-- JQuery -->
-      <script async type="text/javascript"
-         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <!-- Bootstrap tooltips -->
-      <script async type="text/javascript"
-         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
-         </script>
+
       <script src="/js/three.r95.min.js"></script>
       <script src="/js/vanta.net.min.js"></script>
       <script>VANTA.NET({ el: "#logo", mouseControls: !0, touchControls: !0, minHeight: 200, minWidth: 200, scale: 1, scaleMobile: 1, color: 2435152, backgroundColor: 5362166 });</script>
       <script
          async>function stickyElement(e) { var navbar = document.querySelector("#navigation"), scrollValue = window.scrollY; scrollValue > 400 ? navbar.classList.add("is-fixed") : scrollValue < 400 && navbar.classList.remove("is-fixed") } window.addEventListener("scroll", stickyElement); let imagen = document.getElementsByClassName("imgGaleria"); function imagenGaleria(e) { console.log(imagen) } array.forEach(element => { console.log(element) });</script>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-         AOS.init();
-      </script>
+      <!-- SCRIPTS -->
+      <!-- JQuery -->
+      <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+      <!-- Bootstrap tooltips -->
+      <script type="text/javascript" src="js/popper.min.js"></script>
       <!-- Bootstrap core JavaScript -->
-      <script async type="text/javascript"
-         src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
       <!-- MDB core JavaScript -->
-      <script async type="text/javascript"
-         src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js">
-         </script>
+      <script type="text/javascript" src="js/mdb.min.js"></script>
+      <!-- Initializations -->
+      <script type="text/javascript">
+         // Animations initialization
+         new WOW().init();
+      </script>
 
    </footer>
 </body>
