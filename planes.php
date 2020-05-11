@@ -5,8 +5,8 @@ require_once('partials/header.php')
 <div class="contenido">
    <div id="headerPlanes" class="text-center py-5 ">
       <h1 class="font-weight-bold">PLANES</h1>
-      <h4 class="font-weight-bolder">Podes elegir el que mejor se adapte</h4>
-      <h4 class="font-weight-bolder">a lo que pretendes</h4>
+      <h4 class="font-weight-bolder">Podés elegir el que mejor se adapte</h4>
+      <h4 class="font-weight-bolder">a lo que necesites</h4>
    </div>
 
    <div class="container">
@@ -80,14 +80,14 @@ require_once('partials/header.php')
                </div>
                <div class="contenido text-left font-weight-bolder px-4 py-3">
                   <ul>
-                     <li><i class="fas fa-caret-right mr-1"></i>Administración de Redes Sociales</li>
+                     <li><i class="fas fa-caret-right mr-1"></i>Gestión de Redes Sociales</li>
                      <li><i class="fas fa-caret-right mr-1"></i>Publicidad en Facebook/Instagram Ads</li>
                      <li><i class="fas fa-caret-right mr-1"></i>Estrategias de Marketing</li>
                      <li><i class="fas fa-caret-right mr-1"></i>Generación de Contenido</li>
                      <li><i class="fas fa-caret-right mr-1"></i>Identidad de marca</li>
                      <li><i class="fas fa-caret-right mr-1"></i>Diseño gráfico</li>
                      <br>
-                     <span class="font-weight-bold">*Servicio de Fotografía y Audiovisual</span><br>
+                     <span class="font-weight-bold">*Consultar por servicio de Fotografía y Audiovisual</span><br>
                      <span class="font-weight-bold">*No incluye inversión publicitaria</span>
                   </ul>
                </div>
@@ -151,12 +151,12 @@ require_once('partials/header.php')
                </div>
                <div class="contenido text-left font-weight-bolder px-4 py-3">
                   <ul>
-                     <li><i class="fas fa-caret-right mr-1"></i>Planificacion</li>
+                     <li><i class="fas fa-caret-right mr-1"></i>Planificación</li>
                      <li><i class="fas fa-caret-right mr-1"></i>Diseño responsive</li>
                      <li><i class="fas fa-caret-right mr-1"></i>Ecommerce</li>
                      <li><i class="fas fa-caret-right mr-1"></i>App Web</li>
                      <li><i class="fas fa-caret-right mr-1"></i>Sitios Autoadministrables</li>
-                     <li><i class="fas fa-caret-right mr-1"></i>Soporte Tecnico Mensual</li>
+                     <li><i class="fas fa-caret-right mr-1"></i>Soporte Técnico Mensual</li>
                   </ul>
                </div>
                <div class="call">
@@ -178,7 +178,7 @@ require_once('partials/header.php')
                </div>
                <div class="contenido text-left font-weight-bolder px-4 py-3">
                   <ul>
-                     <li><i class="fas fa-caret-right mr-1"></i>Tambien podes solicitar cotizacion por un plan a tu
+                     <li><i class="fas fa-caret-right mr-1"></i>También podes solicitar cotizacion por un plan a tu
                         medida </li>
 
                      <span class="font-weight-bold"></span>

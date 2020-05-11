@@ -19,7 +19,7 @@ require_once('../partials/header.php')
       </div>
    </div>
    <div id="fotografia">
-      <div><img src="../img/desktop/f1.jpg" class="img-fluid w-75 mx-auto" alt="fotografia"><span>FOTOGRAFIA</span>
+      <div><img src="../img/desktop/f1.jpg" class="img-fluid w-75 mx-auto" alt="fotografia"><span>FOTOGRAFÍA</span>
       </div>
       <div><img src="../img/desktop/f2.jpg" class="img-fluid w-75 mx-auto" alt="audiovisual"><span>AUDIOVISUAL</span>
       </div>
@@ -29,9 +29,9 @@ require_once('../partials/header.php')
    </div>
    <div id="disenio">
       <div><img src="../img/desktop/d1.jpg" class="img-fluid w-75 mx-auto" alt="disenio-grafico"><span>DISEÑO
-            GRAFICO</span>
+            GRÁFICO</span>
       </div>
-      <div><img src="../img/desktop/d2.jpg" class="img-fluid w-75 mx-auto" alt="contenidos"><span>GENERACION DE
+      <div><img src="../img/desktop/d2.jpg" class="img-fluid w-75 mx-auto" alt="contenidos"><span>GENERACIÓN DE
             CONTENIDOS</span>
       </div>
       <div><img src="../img/desktop/d3.jpg" class="img-fluid w-75 mx-auto" alt="estrategias"><span>ESTRATEGIAS</span>
@@ -49,7 +49,7 @@ require_once('../partials/header.php')
       </div>
       <div class="col-12 col-lg-6">
          <div class="px-3 py-3">
-            <h3 class="font-weight-bold text-center" class="font-weight-bold">ADMINISTRACION DE</h3>
+            <h3 class="font-weight-bold text-center" class="font-weight-bold">GESTIÓN DE</h3>
             <h3 class="font-weight-bold text-center" class="font-weight-bold">REDES SOCIALES</h3>
             <p>Gestionamos tus redes sociales. Logramos mantener presencia online continua de las marcas
                interactuando con nuestro público objetivo.</p>
@@ -140,7 +140,7 @@ require_once('../partials/header.php')
       </div>
       <div class="col-12 col-lg-6">
          <div class="px-3 py-3">
-            <h2 class="font-weight-bold text-center">FOTOGRAFIA</h2>
+            <h2 class="font-weight-bold text-center">FOTOGRAFÍA</h2>
             <p>Realizamos campañas fotográficas. Sesiones de foto-producto, sociales, eventos y/o servicios.
                Capturamos ese momento tan valioso en el cliente</p>
             <h2 class="font-weight-bold text-center">AUDIOVISUAL</h2>

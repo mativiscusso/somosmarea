@@ -13,7 +13,7 @@ require_once('../partials/header.php')
          <div class="multi-button pb-5 smooth-scroll">
             <a class="text-dark btnWeb animated flipInY delay-1s" data-scroll href="#tiendas"><button>TIENDA
                   ONLINE</button></a>
-            <a class="text-dark btnWeb animated flipInY delay-1s" data-scroll href="#paginaweb"><button>PAGINAS
+            <a class="text-dark btnWeb animated flipInY delay-1s" data-scroll href="#paginaweb"><button>SITIOS
                   WEB</button></a>
             <a class="text-dark btnWeb animated flipInY delay-1s" data-scroll href="#appWeb"><button>APLICACIONES
                   WEB</button></a>
@@ -22,7 +22,7 @@ require_once('../partials/header.php')
    </div>
    <div class="py-5" id="serviciosWeb">
       <div id="contenidoTransformar" class="container">
-         <h2 class="font-weight-bold py-5">¿Que te ofrecemos?</h2>
+         <h2 class="font-weight-bold py-5">¿Qué te ofrecemos?</h2>
          <div id="ofrecemosWeb" class="row">
             <div class="col-12 col-lg-4">
                <div class="py-4" id="uno">
@@ -41,12 +41,12 @@ require_once('../partials/header.php')
 
                   <i class="fas fa-paint-brush fa-2x py-3"></i>
                   <p>Creatividad 100%. La experiencia del usuario con el sitio será más amigable y de fácil uso (UI)
-                     proporcionando una grata sensacion.(UX).</p>
+                     proporcionando una grata sensación.(UX).</p>
                </div>
             </div>
             <div class="col-12 col-lg-4">
                <div class="py-4" id="tres">
-                  <h4 class="font-weight-bold">SEO: Analisis y Posicionamiento</h4>
+                  <h4 class="font-weight-bold">SEO: Análisis y Posicionamiento</h4>
                   <i class="fas fa-search fa-2x py-3"></i>
                   <p>Empleamos técnicas que le permiten a tu página web lograr un posicionamiento orgánico (SEO).
                      Pudiendo
@@ -59,7 +59,7 @@ require_once('../partials/header.php')
                   <h4 class="font-weight-bold">Pack</h4>
 
                   <i class="fas fa-server fa-2x py-3"></i>
-                  <p>Proveemos configuracion de Correos Empresariales, Certificados SSL y Registro de Dominios</p>
+                  <p>Proveemos configuración de Correos Empresariales, Certificados SSL y Registro de Dominios</p>
                </div>
             </div>
             <div class="col-12 col-lg-4">
@@ -74,7 +74,7 @@ require_once('../partials/header.php')
             </div>
             <div class="col-12 col-lg-4">
                <div class="py-4" id="seis">
-                  <h4 class="font-weight-bold">Auditorias y Soporte Tecnico</h4>
+                  <h4 class="font-weight-bold">Auditorías y Soporte Técnico</h4>
                   <i class="fas fa-users-cog fa-2x py-3"></i>
                   <p>Ofrecemos auditorias a sitios que ya esten activos, como asi tambien, soporte tecnico constante
                      sobre
@@ -89,14 +89,14 @@ require_once('../partials/header.php')
    <div class="white py-5">
       <div class="container py-5" id="tienda">
          <h3 class="font-weight-bold">Tienda Online</h3>
-         <p>Ofrecemos una amplia gama de plataformas que se amoldan a tu negocio o a tu economia.</p>
-         <p>Pero, ¿por que es necesario tener una Tienda Onlne?. Te lo resumimos brevemente:</p>
+         <p>Ofrecemos una amplia gama de plataformas que se amoldan a tu negocio o a tu economía.</p>
+         <p>Pero, ¿por qué es necesario tener una Tienda Onlne?. Te lo resumimos brevemente:</p>
          <p>El e-commerce nos permite hacer llegar nuestro negocio a cada parte del mundo, simplemente necesitando un
             dispositivo electrónico y conexión a Internet. Actualmente las compras online están en auge y no paran de
             crecer. Ésto se debe a que suponen una gran comodidad para los clientes, pueden realizar sus compras sin
             moverse de casa.</p>
-         <h6 class="font-weight-bold">Fotografia Profesional para tu tienda</h6>
-         <p>Servicio exclusivo para tu Tienda Online. Mira alguno de nuestros trabajos:</p>
+         <h6 class="font-weight-bold">Fotografía Profesional para tu tienda</h6>
+         <p>Servicio exclusivo para tu Tienda Online. Te mostramos algunos de nuestros trabajos:</p>
          <div class="carousel" data-flickity='{ "wrapAround": true }'>
             <div id="carouselProducto" class="carousel-cell">
                <div class="card mx-5" style="width: 18rem;text-align:center;">
@@ -155,9 +155,7 @@ require_once('../partials/header.php')
       <div class="container py-4" id="paginaWeb">
          <h3 class="font-weight-bold">Paginas Web</h3>
          <section id="appWeb"></section>
-         <p>Tener una pagina web trae consigo muchos beneficios como la visibilidad ante el mundo a un click de
-            distancia. Tambien nos da una idendidad empresarial solida, fidelizando a nuestros clientes reforzando
-            nuestra credibilidad y como no, proporciona una mejora en la rentabilidad.</p>
+         <p>Una página web nos permite lograr una mayor visibilidad ante el público que ya nos conoce cómo también frente a nuevas audiencias. Nos otorga identidad corporativa y una sólida presencia en el mercado. Nos permite generar confianza en nuestros clientes y aumentar nuestra rentabilidad.</p>
          <p>Tipos de sitios web que te ofrecemos:</p>
          <div id="galeria">
             <div class="container-fluid">
@@ -189,7 +187,7 @@ require_once('../partials/header.php')
       <div class="container py-4" id="appweb">
          <h3 class="font-weight-bold">Aplicaciones Web</h3>
          <p>El mundo de internet es muy amplio, pero la mente humana es mas poderosa aun. Nosotros te facilitamos el
-            camino entre esa gran idea y la puesta en practica.</p>
+            camino entre esa gran idea y la puesta en práctica.</p>
          <p>¿Te imaginas poder digitalizar cualquier proceso que
             consideres necesario? </p>
          <p> Charlemos entonces..</p>

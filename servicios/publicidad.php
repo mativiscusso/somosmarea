@@ -44,16 +44,16 @@ require_once('../partials/header.php')
          </div>
          <div id="campanias" class="pt-5">
             <div data-aos="zoom-in" class="blue-gradient color-block mb-3 mx-auto rounded-circle z-depth-1 animated pulse infinite slower">
-               <span>Banding</span>
+               <span>Branding</span>
             </div>
             <div data-aos="zoom-in-up" class="blue-gradient color-block mb-3 mx-auto rounded-circle z-depth-1 animated pulse infinite slow">
                <span>Alcance</span>
             </div>
             <div data-aos="zoom-in-down" class="blue-gradient color-block mb-3 mx-auto rounded-circle z-depth-1 animated pulse infinite slower">
-               <span>Interaccion</span>
+               <span>Interacción</span>
             </div>
             <div data-aos="zoom-in-left" class="blue-gradient color-block mb-3 mx-auto rounded-circle z-depth-1 animated pulse infinite slow">
-               <span>Trafico</span>
+               <span>Tráfico</span>
             </div>
             <div data-aos="zoom-in-right" class="blue-gradient color-block mb-3 mx-auto rounded-circle z-depth-1 animated pulse infinite slower">
                <span>Conversiones</span>
@@ -162,11 +162,8 @@ require_once('../partials/header.php')
                </div>
                <div class="col-12 col-md-6">
                   <h2 class="font-weight-bold text-center">FACEBOOK ADS</h2>
-                  <p>Facebook Ads es el sistema por el cuál podrás promocionar tu Página de Facebook, Sitio Web,
-                     Evento
-                     o Aplicación. Gracias a él, podés crear anuncios de texto, gráficos y de video, que se mostrarán
-                     en
-                     el inicio, perfil y fotos de los usuarios, pagando solamente por los clics recibidos.</p>
+                  <p>Facebook Ads es el sistema por el cuál podemos promocionar una Página de Facebook, sitio Web, evento o aplicación. Gracias a él, podemos crear anuncios de texto, gráficos y de video.
+                  El administrador de anuncios es una herramienta de Facebook que nos permite crear y administrar los anuncios de la plataforma. Podemos ver las campañas, conjuntos de anuncios y anuncios, realizar cambios y consultar los resultados. Por medio del mismo generamos las campañas publicitarias que impactarán tanto en Facebook como en Instagram.</p>
                </div>
             </div>
             <div class="text-center my-4">
@@ -309,9 +306,9 @@ require_once('../partials/header.php')
                </div>
                <div class="col-12 col-md-6">
                   <h2 class="font-weight-bold">FACEBOOK ADS</h2>
-                  <p>Facebook Ads es el sistema por el cuál podrás promocionar tu Página de Facebook, Sitio Web, Evento
-                     o Aplicación. Gracias a él, podés crear anuncios de texto, gráficos y de video, que se mostrarán en
-                     el inicio, perfil y fotos de los usuarios, pagando solamente por los clics recibidos.</p>
+                  <p>Facebook Ads es el sistema por el cuál podemos promocionar una Página de Facebook, sitio Web, evento o aplicación. Gracias a él, podemos crear anuncios de texto, gráficos y de video.
+                  El administrador de anuncios es una herramienta de Facebook que nos permite crear y administrar los anuncios de la plataforma. Podemos ver las campañas, conjuntos de anuncios y anuncios, realizar cambios y consultar los resultados. Por medio del mismo generamos las campañas publicitarias que impactarán tanto en Facebook como en Instagram.
+                  </p>
                </div>
             </div>
             <div class="text-center my-4">
