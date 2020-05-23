@@ -352,7 +352,7 @@ require_once('../partials/header.php')
    <article id="emailMkt" class="text-center py-5 w-100">
       <h2 class="font-weight-bold" class="text-center font-weight-bold">CAMPAÑAS DE EMAIL MARKETING</h2>
    </article>
-<div class="container py-3">
+<div class="container py-5">
    <form id="contacto" class="mx-auto" action="https://formspree.io/xzbjparz" method="POST">
          <div class="form-group">
             <label for="exampleFormControlInput1">Nombre</label>
