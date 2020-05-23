@@ -33,7 +33,7 @@ require_once('partials/header.php')
                   <div class="text-center my-4">
                      <button type="button" class="btn light-blue lighten-2 align-text-bottom"><a
                            href="contacto"
-                           target="_blank" class="text-white">SOLICITAR
+                            class="text-white">SOLICITAR
                            PRESUPUESTO</a></button>
                   </div>
                </div>
@@ -65,7 +65,7 @@ require_once('partials/header.php')
                   <div class="text-center my-4">
                      <button type="button" class="btn cyan lighten-1"><a
                            href="contacto"
-                           target="_blank" class="text-white ">SOLICITAR
+                            class="text-white ">SOLICITAR
                            PRESUPUESTOO</a></button>
                   </div>
                </div>
@@ -96,7 +96,7 @@ require_once('partials/header.php')
                   <div class="text-center my-4">
                      <button type="button" class="btn light-blue darken-1"><a
                            href="contacto"
-                           target="_blank" class="text-white">SOLICITAR
+                            class="text-white">SOLICITAR
                            PRESUPUESTO</a></button>
                   </div>
                </div>
@@ -136,7 +136,7 @@ require_once('partials/header.php')
                   <div class="text-center my-4">
                      <button type="button" class="btn   light-blue darken-2"><a
                            href="contacto"
-                           target="_blank" class="text-white">SOLICITAR
+                            class="text-white">SOLICITAR
                            PRESUPUESTO </a></button>
                   </div>
                </div>
@@ -163,7 +163,7 @@ require_once('partials/header.php')
                   <div class="text-center my-4">
                      <button type="button" class="btn light-blue darken-3"><a
                            href="contacto"
-                           target="_blank" class="text-white">SOLICITAR
+                            class="text-white">SOLICITAR
                            PRESUPUESTO</a></button>
                   </div>
                </div>
@@ -189,7 +189,7 @@ require_once('partials/header.php')
                   <div class="text-center my-4">
                      <button type="button" class="btn light-blue darken-4"><a
                            href="contacto"
-                           target="_blank" class="text-white">SOLICITAR
+                            class="text-white">SOLICITAR
                            PRESUPUESTO</a></button>
                   </div>
                </div>
