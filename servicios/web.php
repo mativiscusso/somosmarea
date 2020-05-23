@@ -149,6 +149,12 @@ require_once('../partials/header.php')
                </div>
             </div>
          </div>
+         <div class="text-center my-4">
+               <button type="button" class="btn light-blue darken-4"><a
+                     href="https://api.whatsapp.com/send?phone=5493412551101&text=Hola!%20Te%20contacto%20desde%20la%20web.%20Estoy%20interesado%20en%20mas%20info..."
+                     target="_blank" class="text-white" onclick="gtag('event', 'enlace', { 'event_category': 'contacto', 'event_action': 'meinteresatiendaonline', 'event_label': 'click', 'value': '0'});">ME
+                     INTERESA</a></button>
+            </div>
          <p> </p>
          <div class="gradient mt-5"></div>
       </div>
@@ -177,7 +183,7 @@ require_once('../partials/header.php')
             <div class="text-center my-4">
                <button type="button" class="btn light-blue darken-4"><a
                      href="https://api.whatsapp.com/send?phone=5493412551101&text=Hola!%20Te%20contacto%20desde%20la%20web.%20Estoy%20interesado%20en%20mas%20info..."
-                     target="_blank" class="text-white">ME
+                     target="_blank" class="text-white" onclick="gtag('event', 'enlace', { 'event_category': 'contacto', 'event_action': 'meinteresapaginaweb', 'event_label': 'click', 'value': '0'});">ME
                      INTERESA</a></button>
             </div>
          </div>
@@ -220,7 +226,43 @@ require_once('../partials/header.php')
          <i class="fab fa-wordpress fa-3x"></i>
       </div>
    </div>
-
+<div class="container py-3">
+<form id="contacto" class="mx-auto" action="https://formspree.io/xzbjparz" method="POST">
+      <div class="form-group">
+         <label for="exampleFormControlInput1">Nombre</label>
+         <input type="text" class="form-control" id="nombre" name="nombre">
+         <label for="exampleFormControlInput1">Email</label>
+         <input type="email" class="form-control" id="email" name="email">
+      </div>
+      <div class="form-group">
+         <label for="exampleFormControlInput1">Telefono</label>
+         <input type="tel" class="form-control" id="telefono" name="telefono">
+         <label for="exampleFormControlInput1">Empresa</label>
+         <input type="text" class="form-control" id="empresa" name="empresa">
+      </div>
+      <div class="form-group">
+         <label for="exampleFormControlSelect1">Servicio interesado</label>
+         <select class="form-control" id="servicios" name="servicios">
+            <option value="" disabled selected>Elige tu opción</option>
+            <option name="1">Publicidad Digital</option>
+            <option name="2">Community Management</option>
+            <option name="3">Desarrollo Web</option>
+            <option name="4">A medida</option>
+         </select>
+      </div>
+      <div class="form-group">
+         <label style="align-items: baseline; padding-top: 1%;width:12%"
+            for="exampleFormControlTextarea1">Mensaje</label>
+         <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
+      </div>
+      <div id="my-form-status" role="alert">
+      </div>
+      <button onclick="gtag('event', 'enlace', { 'event_category': 'contacto', 'event_action': 'formulario', 'event_label': 'click', 'value': '0'});" 
+      id="my-form-button" value="Enviar" type="submit" class="btn btn-rounded btn-block z-depth-0 my-4 waves-effect">
+      Enviar
+      </button>
+   </form>
+</div>
 <?php
 require_once('../partials/footer.php')
 ?>

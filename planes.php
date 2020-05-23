@@ -32,7 +32,7 @@ require_once('partials/header.php')
                <div class="call align-bottom">
                   <div class="text-center my-4">
                      <button type="button" class="btn light-blue lighten-2 align-text-bottom"><a
-                           href="https://api.whatsapp.com/send?phone=5493412551101&text=Hola!%20Te%20contacto%20desde%20la%20web.%20Estoy%20interesado%20en%20mas%20info..."
+                           href="contacto"
                            target="_blank" class="text-white">SOLICITAR
                            PRESUPUESTO</a></button>
                   </div>
@@ -64,7 +64,7 @@ require_once('partials/header.php')
                <div class="call align-bottom">
                   <div class="text-center my-4">
                      <button type="button" class="btn cyan lighten-1"><a
-                           href="https://api.whatsapp.com/send?phone=5493412551101&text=Hola!%20Te%20contacto%20desde%20la%20web.%20Estoy%20interesado%20en%20mas%20info..."
+                           href="contacto"
                            target="_blank" class="text-white ">SOLICITAR
                            PRESUPUESTOO</a></button>
                   </div>
@@ -95,7 +95,7 @@ require_once('partials/header.php')
                <div class="call">
                   <div class="text-center my-4">
                      <button type="button" class="btn light-blue darken-1"><a
-                           href="https://api.whatsapp.com/send?phone=5493412551101&text=Hola!%20Te%20contacto%20desde%20la%20web.%20Estoy%20interesado%20en%20mas%20info..."
+                           href="contacto"
                            target="_blank" class="text-white">SOLICITAR
                            PRESUPUESTO</a></button>
                   </div>
@@ -135,7 +135,7 @@ require_once('partials/header.php')
                <div class="call">
                   <div class="text-center my-4">
                      <button type="button" class="btn   light-blue darken-2"><a
-                           href="https://api.whatsapp.com/send?phone=5493412551101&text=Hola!%20Te%20contacto%20desde%20la%20web.%20Estoy%20interesado%20en%20mas%20info..."
+                           href="contacto"
                            target="_blank" class="text-white">SOLICITAR
                            PRESUPUESTO </a></button>
                   </div>
@@ -162,7 +162,7 @@ require_once('partials/header.php')
                <div class="call">
                   <div class="text-center my-4">
                      <button type="button" class="btn light-blue darken-3"><a
-                           href="https://api.whatsapp.com/send?phone=5493412551101&text=Hola!%20Te%20contacto%20desde%20la%20web.%20Estoy%20interesado%20en%20mas%20info..."
+                           href="contacto"
                            target="_blank" class="text-white">SOLICITAR
                            PRESUPUESTO</a></button>
                   </div>
@@ -188,7 +188,7 @@ require_once('partials/header.php')
                <div class="call">
                   <div class="text-center my-4">
                      <button type="button" class="btn light-blue darken-4"><a
-                           href="https://api.whatsapp.com/send?phone=5493412551101&text=Hola!%20Te%20contacto%20desde%20la%20web.%20Estoy%20interesado%20en%20mas%20info..."
+                           href="contacto"
                            target="_blank" class="text-white">SOLICITAR
                            PRESUPUESTO</a></button>
                   </div>

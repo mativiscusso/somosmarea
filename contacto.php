@@ -39,7 +39,8 @@ require_once('partials/header.php');
       </div>
       <div id="my-form-status" role="alert">
       </div>
-      <button id="my-form-button" value="Enviar" type="submit" class="btn btn-rounded btn-block z-depth-0 my-4 waves-effect">
+      <button onclick="gtag('event', 'enlace', { 'event_category': 'contacto', 'event_action': 'formulario', 'event_label': 'click', 'value': '0'});" 
+      id="my-form-button" value="Enviar" type="submit" class="btn btn-rounded btn-block z-depth-0 my-4 waves-effect">
       Enviar
       </button>
    </form>
